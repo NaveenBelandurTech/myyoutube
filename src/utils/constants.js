@@ -1,0 +1,1 @@
+const YOUTUBE_VIDEO_API = 'https://youtube.googleapis.com/youtube/v3/videos?key=[YOUR_API_KEY] HTTP/1.1'
