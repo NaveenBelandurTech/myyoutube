@@ -84,10 +84,10 @@ export const Head = () => {
 
         {showSuggestions && suggestion.length > 0 && (
           <div className="fixed  bg-white w-1/2 mt-1 rounded-lg shadow-lg border border-gray-200">
-            <ul>
+            <ul className='py-1 px-1 '>
               {suggestion &&
                 suggestion?.map((Data) => {
-                  return <li>{Data}</li>;
+                  return <li className='px-1 py-1 mx-1 my-1 hover:bg-sky-600 hover:text-white cursor-pointer'> 🔍 {" "}{Data}</li>;
                 })}
             </ul>
           </div>

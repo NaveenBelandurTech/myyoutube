@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { closeWatch } from "../utils/appslice";
 import { useSearchParams } from "react-router-dom";
+import CommentsContainer from "./CommentsContainer";
 
 export const WatchPage = () => {
   const [searchParams] = useSearchParams();
@@ -11,7 +12,7 @@ export const WatchPage = () => {
   }, []);
 
   return (
-    <>
+    <div>
       <div className="px-5">
         <iframe
           width="900"
@@ -23,6 +24,7 @@ export const WatchPage = () => {
           allowFullScreen
         ></iframe>
       </div>
-    </>
+      <CommentsContainer />
+    </div>
   );
 };
