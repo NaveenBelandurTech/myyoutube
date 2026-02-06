@@ -4,7 +4,7 @@ const List = ['All','Gaming',"Songs","Live",'Soccer',"Cricket","Cooking","Cricke
 
 const ButtonList = () => {
   return (
-    <div className='flex'>
+    <div className='flex overflow-x-hidden'>
       {List?.map((data,i)=>{
         return (
            <Button key={i} name={data} />
